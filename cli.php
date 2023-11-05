@@ -9,6 +9,7 @@
  * BY       : DARKXCODE
  */
 require_once "function/function.php";
+require_once "function/settings.php";
 
 echo banner();
 echo banner2();
